@@ -10,6 +10,7 @@
 		2D595B801A48779400BCB52D /* digiBridgeLocation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D595B7F1A48779400BCB52D /* digiBridgeLocation.h */; };
 		2D595B821A48779400BCB52D /* digiBridgeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D595B811A48779400BCB52D /* digiBridgeLocation.m */; };
 		2D595B881A48779400BCB52D /* libdigiBridgeLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D595B7C1A48779400BCB52D /* libdigiBridgeLocation.a */; };
+		2D595B971A487AC700BCB52D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D595B961A487AC700BCB52D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		2D595B811A48779400BCB52D /* digiBridgeLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = digiBridgeLocation.m; sourceTree = "<group>"; };
 		2D595B871A48779400BCB52D /* digiBridgeLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digiBridgeLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D595B8D1A48779400BCB52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D595B961A487AC700BCB52D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D595B971A487AC700BCB52D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		2D595B731A48779400BCB52D = {
 			isa = PBXGroup;
 			children = (
+				2D595B961A487AC700BCB52D /* CoreLocation.framework */,
 				2D595B7E1A48779400BCB52D /* digiBridgeLocation */,
 				2D595B8B1A48779400BCB52D /* digiBridgeLocationTests */,
 				2D595B7D1A48779400BCB52D /* Products */,
