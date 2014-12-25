@@ -1,0 +1,1 @@
+pod 'digiBridgeLocation', path: './'

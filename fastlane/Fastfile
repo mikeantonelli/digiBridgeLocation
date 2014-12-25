@@ -1,0 +1,15 @@
+before_all do
+  cocoapods
+end
+
+lane :test do 
+  xctool :test
+end
+
+after_all do |lane|
+
+end
+
+error do |lane, exception|
+
+end

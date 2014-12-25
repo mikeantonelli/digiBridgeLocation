@@ -7,7 +7,7 @@
 //
 
 #import "digiBridgeLocation.h"
-#import "UIViewController+DBPrivacyHelper.h"
+//#import "UIViewController+DBPrivacyHelper.h"
 
 @interface digiBridgeLocation () <CLLocationManagerDelegate>
 
@@ -74,11 +74,11 @@
                                controller:(UIViewController *)controller
                           openSettingsApp:(BOOL)openSettingsApp
 {
-    [controller showPrivacyHelperForType:DBPrivacyTypeLocation
-                              controller:nil
-                              didPresent:nil
-                              didDismiss:nil
-                   useDefaultSettingPane:openSettingsApp];
+//    [controller showPrivacyHelperForType:DBPrivacyTypeLocation
+//                              controller:nil
+//                              didPresent:nil
+//                              didDismiss:nil
+//                   useDefaultSettingPane:openSettingsApp];
 }
 
 #pragma mark Instance

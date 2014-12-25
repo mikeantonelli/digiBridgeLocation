@@ -1,0 +1,8 @@
+language: objective-c
+before_install:
+- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+- gem install fastlane --no-rdoc --no-ri --no-document --quiet
+script: fastlane test
+notifications:
+  slack:
+    secure: gAYGcd+2AEc46rVzDg38MwCy3/mH3M6f/39MQpnPl0qlyWRnj+AJQTU0R3jRbbWGyPUaoKpVLjOJgmICcFR2jTQhKOu3VbTUAziq659n35xLLVkaEruqhUqmJXLGEaDgrI2IRVGu4hCezJlNMGMn99RTRogmiUhu+mMhNcMEvf8=
