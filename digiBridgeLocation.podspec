@@ -14,11 +14,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.ios.deployment_target = '8.0'
+  
+  s.ios.frameworks  = 'CoreLocation', 
+                      'Foundation', 
+                      'MapKit', 
+                      'UIKit'
 
   s.public_header_files = 'digiBridgeLocation/*.h'
-  s.source_files = 'digiBridgeLocation/digiBridgeLocation.h'
-
-  s.framework = 'CoreLocation'
+  s.source_files = 'digiBridgeLocation/*.{h,m}'
 
   # Quick tool to explain the right place to enable your privacy settings
   # ==> MIT
