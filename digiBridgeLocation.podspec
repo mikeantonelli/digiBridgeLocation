@@ -28,23 +28,4 @@ Pod::Spec.new do |s|
   # https://github.com/danielebogo/DBPrivacyHelper
   
   s.dependency 'DBPrivacyHelper', '~> 0.4'
-
-  # A fast & simple, yet powerful & flexible logging framework for Mac and iOS
-  # ==> BSD
-  # https://github.com/CocoaLumberjack/CocoaLumberjack
-
-  s.dependency 'CocoaLumberjack', '~> 1.9'
-
-  # KVNProgress is a fully customizable progress HUD that can be full screen or not.
-  # ==> MIT
-  # https://github.com/kevin-hirsch/KVNProgress
-  
-  s.dependency 'KVNProgress', '~> 2.1'
-
-  # Remote configuration for iOS
-  # ==> MIT
-  # https://github.com/mattt/GroundControl
-  
-  s.dependency 'GroundControl', '~> 2.1' 
-
 end
