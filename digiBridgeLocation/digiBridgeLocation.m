@@ -44,9 +44,10 @@
                            success:(void(^)(CLAuthorizationStatus status))success
                            failure:(void(^)(CLAuthorizationStatus status))failure
 {
-    if ([self authorizationStatus] == authorizationStatus)
-        return; // we've already got what you're looking for
-    
+    if ([self authorizationStatus] == authorizationStatus) // we've already got what you're looking for
+        if (success)
+            success(authorizationStatus);
+        return;
     
     // We should move this, so the blocks are not held on to when a bad authorizationStatus is sent.
     [[self.class sharedClient] setSuccessBlock:success];
