@@ -16,16 +16,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   
   s.ios.frameworks  = 'CoreLocation', 
-                      'Foundation', 
-                      'MapKit', 
+                      'Foundation',
                       'UIKit'
 
   s.public_header_files = 'digiBridgeLocation/*.h'
   s.source_files = 'digiBridgeLocation/*.{h,m}'
-
-  # Quick tool to explain the right place to enable your privacy settings
-  # ==> MIT
-  # https://github.com/danielebogo/DBPrivacyHelper
-  
-  s.dependency 'DBPrivacyHelper', '~> 0.4'
 end

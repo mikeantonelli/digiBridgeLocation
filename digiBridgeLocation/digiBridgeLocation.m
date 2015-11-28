@@ -1,13 +1,12 @@
 //
 //  digiBridgeLocation.m
-//  Pods
+//  digiBridgeLocation
 //
 //  Created by Mike Antonelli on 12/22/14.
 //
 //
 
 #import "digiBridgeLocation.h"
-//#import "UIViewController+DBPrivacyHelper.h"
 
 @interface digiBridgeLocation () <CLLocationManagerDelegate>
 
@@ -45,9 +44,13 @@
                            failure:(void(^)(CLAuthorizationStatus status))failure
 {
     if ([self authorizationStatus] == authorizationStatus) // we've already got what you're looking for
+    {
         if (success)
+        {
             success(authorizationStatus);
+        }
         return;
+    }
     
     // We should move this, so the blocks are not held on to when a bad authorizationStatus is sent.
     [[self.class sharedClient] setSuccessBlock:success];
@@ -69,17 +72,6 @@
         default:
             break;
     }
-}
-
-+ (void)displayAuthorizationStatusMessage:(CLAuthorizationStatus)status
-                               controller:(UIViewController *)controller
-                          openSettingsApp:(BOOL)openSettingsApp
-{
-//    [controller showPrivacyHelperForType:DBPrivacyTypeLocation
-//                              controller:nil
-//                              didPresent:nil
-//                              didDismiss:nil
-//                   useDefaultSettingPane:openSettingsApp];
 }
 
 #pragma mark Instance
@@ -114,12 +106,7 @@
 
 - (instancetype)_init
 {
-    if (self = [super init])
-    {
-        
-    }
-    
-    return self;
+    return [super init];
 }
 
 - (CLLocationManager *)locationManager
@@ -166,8 +153,6 @@
         default:
             break;
     }
-    
-
 }
 
 - (void)clearBlocks

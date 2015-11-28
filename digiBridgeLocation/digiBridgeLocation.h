@@ -45,17 +45,4 @@
                            success:(void(^)(CLAuthorizationStatus status))success
                            failure:(void(^)(CLAuthorizationStatus status))failure;
 
-/**
- *  Present the user a modal view controller which informs them how to enable location services
- *  if they were previously denied. Optionally, open the Settings app directly by setting
- *  openSettingsApp to YES.
- *
- *  @param status          The status to display the message for, currently doesn't do anything.
- *  @param controller      The controller to present the modal action from.
- *  @param openSettingsApp Whether or not to open the Settings app directly.
- */
-+ (void)displayAuthorizationStatusMessage:(CLAuthorizationStatus)status
-                               controller:(UIViewController *)controller
-                          openSettingsApp:(BOOL)openSettingsApp;
-
 @end

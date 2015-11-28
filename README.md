@@ -13,11 +13,13 @@ pod 'digiBridgeLocation'
 
 ## Testing
 
-This project uses [fastlane](http://fastlane.tools/), [xctool](https://github.com/facebook/xctool) and [cocoapods](http://cocoapods.org/).
+digiBridgeLocation includes a suite of unit tests within the Tests subdirectory. In order to run the unit tests, you must install the testing dependencies via [CocoaPods](https://cocoapods.org/):
 
-```
-$ gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-$ gem install fastlane --no-rdoc --no-ri --no-document --quiet
-$ brew install xctool
-$ fastlane test
-```
+    $ cd Tests
+    $ pod install
+
+Once testing dependencies are installed, you can execute the test suite via the 'iOS Tests' scheme within Xcode.
+
+## License
+
+digiBridgeLocation is released under the MIT license. See LICENSE for details.
