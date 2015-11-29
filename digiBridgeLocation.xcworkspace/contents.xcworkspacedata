@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "digiBridgeLocation">
+      <FileRef
+         location = "group:digiBridgeLocation/digiBridgeLocation.h">
+      </FileRef>
+      <FileRef
+         location = "group:digiBridgeLocation/digiBridgeLocation.m">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "group:digiBridgeLocation.xcodeproj">
+      location = "group:Example/digiBridgeLocation iOS Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:Tests/digiBridgeLocation Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,7 +1,0 @@
-[
-  "-workspace", "digiBridgeLocation.xcworkspace",
-  "-scheme", "digiBridgeLocation",
-  "-configuration", "Debug", 
-  "-sdk", "iphonesimulator",
-  "-arch", "i386"
-]
